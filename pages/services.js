@@ -27,7 +27,7 @@ const Services = () => {
                                 </svg>
                             </li>
                             <li className="inline-flex items-center text-gray-400">
-                                <span>Web Development</span>
+                                <span>Software Mobile / Web Development</span>
                             </li>
                         </ul>
                     </div>
@@ -36,7 +36,7 @@ const Services = () => {
                     <div className="container py-12 mx-auto">
                         <div className="flex flex-wrap">
                             <div className="w-full md:w-1/2 pr-12 px-3 order-0 md:order-0 mb-12 md:mb-0 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
-                                <img className="sm:max-w-sm lg:max-w-full mx-auto" src="/assets/imgs/placeholders/img-6.jpg" alt="Monst" />
+                                <img className="sm:max-w-sm lg:max-w-full mx-auto" src="/assets/imgs/placeholders/service_min.png" alt="Learn new Skills" />
                             </div>
                             <div className="w-full md:w-1/2 px-3 order-1 md:order-1">
                                 <div className="max-w-md-2">
@@ -45,13 +45,13 @@ const Services = () => {
                                             Why choose us
                                         </span>
                                         <h2 className="text-4xl mt-3 font-bold font-heading wow animate__animated animate__fadeIn" data-wow-delay=".3s">
-                                            We Provide Best <br />
-                                            <span className="text-blue-500">Web design </span>services
+                                            We Provide the best <br />
+                                            <span className="text-blue-500">environment</span> for personal growth. 
                                         </h2>
                                     </div>
 
                                     <p className="mb-6 leading-loose text-blueGray-400 wow animate__animated animate__fadeIn" data-wow-delay=".1s">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.
+                                         You spend 86,400 hours of your life at work.<br />You deserve a job that you love! 
                                     </p>
 
                                     <div className="flex flex-wrap">
@@ -60,8 +60,8 @@ const Services = () => {
                                                 <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">1</span>
                                             </div>
                                             <div>
-                                                <h3 className="mb-2 text-xl font-semibold font-heading">Web design UX/UI</h3>
-                                                <p className="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Grow with the Team</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">After 7-days of learning, you will be included in the team project & start practicing your skills.<br />Working in a team encourages<br />personal growth and reduces stress.</p>
                                             </div>
                                         </div>
                                         <div className="w-full md:w-1/2 items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
@@ -69,8 +69,8 @@ const Services = () => {
                                                 <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">2</span>
                                             </div>
                                             <div>
-                                                <h3 className="mb-2 text-xl font-semibold font-heading">React Develop</h3>
-                                                <p className="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Learning By Doing</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">Deliberate practice means practicing with a clear awareness of the specific components of a skill we're aiming to improve and exactly how to improve them.</p>
                                             </div>
                                         </div>
                                         <div className="w-full md:w-1/2 items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".4s">
@@ -78,8 +78,8 @@ const Services = () => {
                                                 <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">3</span>
                                             </div>
                                             <div>
-                                                <h3 className="mb-2 text-xl font-semibold font-heading">Ecommerce Build</h3>
-                                                <p className="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Tools & Resources</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">We will provide you best tools and resources to help you<br /> learn new skill, such as free courses, chatbot, mentors, podcasts, books,<br /> and connect with professionals </p>
                                             </div>
                                         </div>
                                         <div className="w-full md:w-1/2 items-start py-4 wow animate__animated animate__fadeIn" data-wow-delay=".5s">
@@ -87,8 +87,8 @@ const Services = () => {
                                                 <span className="inline-block py-2 px-4 mr-4 text-xs font-semibold bg-blue-500 text-white rounded">4</span>
                                             </div>
                                             <div>
-                                                <h3 className="mb-2 text-xl font-semibold font-heading">CMS develop</h3>
-                                                <p className="text-blueGray-400 leading-loose text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis expedita animi.</p>
+                                                <h3 className="mb-2 text-xl font-semibold font-heading">Evaluate your new skills</h3>
+                                                <p className="text-blueGray-400 leading-loose text-sm">One of the most effective ways to develop your new skillset is to constantly practice & evaluate what you have learned. We will constatly track your progress.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,7 +123,7 @@ const Services = () => {
                                 <div className="sm:py-2 ml-2 sm:ml-6">
                                     <span className="sm:text-2xl font-bold font-heading">+ </span>
                                     <span className="sm:text-2xl font-bold font-heading count">
-                                        <CounterUp count={58} time={3} />
+                                        <CounterUp count={15} time={3} />
                                     </span>
                                     <span className="sm:text-2xl font-bold font-heading"> k </span>
                                     <p className="text-xs sm:text-base text-blueGray-400">Completed Projects</p>
@@ -172,7 +172,7 @@ const Services = () => {
                                 </h2>
                             </div>
                             <div className="w-full lg:w-1/2">
-                                <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum vitae ligula id imperdiet.</p>
+                                <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn">For us, every relationship is built on trust and honesty.<br />Our web development process keeps those people involved, engaged and informed throughout design, build and the life of your project.</p>
                             </div>
                         </div>
                         <div className="flex flex-wrap -mx-3 -mb-6 text-center">
