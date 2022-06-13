@@ -46,7 +46,7 @@ const Footer = () => {
                             <a className="inline-block px-2" href="https://www.instagram.com/slavo_3/">
                                 <img src="/assets/imgs/icons/instagram-blue.svg" alt="Slavo3 && Prototype.NEXT" />
                             </a>
-                             <a className="inline-block px-2" href="https://www.instagram.com/prototypenext/">
+                             <a className="inline-block px-2" href="https://www.instagram.com/felpapp/">
                                 <img src="/assets/imgs/icons/instagram-blue.svg" alt="Slavo3 && Prototype.NEXT" />
                             </a>
                         </div>
