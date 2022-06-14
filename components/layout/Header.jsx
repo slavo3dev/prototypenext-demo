@@ -71,13 +71,13 @@ const Header = ({handleHidden}) => {
                                     </li>
                                 </ul> */}
                             </li>
-                            <li className="pt-4 pb-4">
+                            {/* <li className="pt-4 pb-4">
                                 <Link href="/about">
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         About Us
                                     </a>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className="pt-4 pb-4">
                                 <Link href="/services">
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">

@@ -19,8 +19,9 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>Slavo_3 && Prototype.NEXT - Fast learning Program to become Software Developer</title>
+                <title>felpApp - Change your Career Fast & Easy</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="icon" sizes="16x16" href="/assets/logos/felpApp_logo.svg"/>
                 <link
                     rel="preconnect"
                     href="https://fonts.gstatic.com"
@@ -37,6 +38,15 @@ const Layout = ({ children }) => {
                     referrerpolicy="no-referrer"
                 ></script>
                 <script>new WOW().init();</script>
+                <meta name='description' content='felpApp - Software Development / Career Change '/>
+                <meta
+                    name='og:title'
+                    property='og:title'
+                    content='felpApp - Learn How To Create & Develop Software Web / Mobile Applications' ></meta>
+                <meta
+                    name='twitter:card'
+                    content='felpApp - Become Software Web Developer FreeLancer'></meta>
+                <link rel='canonical' href='https://www.felpapp.com'></link>
             </Head>
             <div className="main font-body text-body">
                 <Header handleHidden={handleHidden} />

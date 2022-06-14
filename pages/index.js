@@ -3,6 +3,7 @@ import Layout from '../components/layout/Layout';
 import Slider2 from '../components/slider/Slider2';
 import TextEffect from "../components/elements/TextEffect"
 import Link from "next/link";
+import { Subscribe } from '../components';
 
 const Home = () => {
     return (
@@ -44,6 +45,7 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                <Subscribe bgColor={"bg-blueGray-100"} />
                 <section className="pt-16 pb-20" id="key-features">
                     <div className="container">
                         <div className="flex flex-wrap items-center mb-12">
