@@ -42,7 +42,7 @@ export const Subscribe = ({bgColor}) => {
                                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                                     </svg>
-                            <input className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none" type="text" placeholder="Type your e-mail" onChange={(e) => setEmail(e.target.value)} value={email} />
+                            {state === 'Success' ? <p>Awesome, you've been subscribed to felpApp</p> : <input className="w-full pl-3 py-4 text-xs text-white placeholder-white font-semibold leading-none bg-blue-500 outline-none" type="text" placeholder="Type your e-mail" onChange={(e) => setEmail(e.target.value)} value={email} />}
                                 </div>
                                 <button className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out" type="submit" onClick={handleSubscribe}>
                                     Sign Up
@@ -51,7 +51,6 @@ export const Subscribe = ({bgColor}) => {
                         </div>
                     </div>
                     {state === 'Error' && ( alert(errorMsg)  )}
-                    {state === 'Success' && ( alert("Awesome, you've been subscribed!"))}
                 </section>
     )
 }
