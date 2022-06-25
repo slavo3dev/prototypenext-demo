@@ -1,28 +1,41 @@
-import mailchimp from '@mailchimp/mailchimp_marketing';
+import axios from "axios";
 
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY,
-  server: process.env.MAILCHIMP_API_SERVER // e.g. us1
-});
+export default async (req, res) => {
+  const { email } = req.body;
 
-export default async (req,res) => {
-    
-  const {email} = req.body;
-  console.log("Response: ", res)
-
-  if (!email) {
-    return res.status(400).json({ error: 'Email is required' });
+  if (!email || !email.length) {
+    return res.status(400).json({ error: "Email is required" });
   }
 
-  try {
-    await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
-      email_address: email,
-      status: 'subscribed',
-      address: 'felpApp',
-    });
+  const API_KEY = process.env.MAILCHIMP_API_KEY;
+  const API_SERVER = process.env.MAILCHIMP_API_SERVER;
+  const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID;
 
-    return res.status(201).json({ error: '' });
+  const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`;
+
+  const data = {
+    email_address: email,
+    status: "subscribed",
+  };
+
+  const options = {
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `api_key ${API_KEY}`,
+    },
+  };
+
+  try {
+    const response = await axios.post(url, data, options);
+    if (response.status >= 400) {
+      return res.status(400).json({
+        error:
+          "There was an error subscribing to the newsletter. Shoot me an email at ogbonnakell@gmail and I'll add you to the list.",
+      });
+    }
+    return res.status(201).json({ message: "success" });
   } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
+    console.log(error);
+    return res.status(500).json({ error: error.message });
   }
 };
