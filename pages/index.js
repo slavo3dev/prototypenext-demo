@@ -32,8 +32,9 @@ const Home = () => {
                       , a Creative{" "}
                       <span className="typewrite d-inline text-brand">
                         <TextEffect
-                          text1="Mentorship Agency"
-                          text2="Consulting Agency"
+                          text1="Web Agency"
+                          text2="Mentorship Agency"
+                          text3="Consulting Agency"
                         />
                       </span>
                     </p>
