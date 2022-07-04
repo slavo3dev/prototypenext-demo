@@ -1,7 +1,17 @@
 import React, { useState, useCallback } from "react";
+import axios from "axios";
 
 export const ContactForm = () => {
   const [payload, setPayload] = useState();
+
+  const sendPayload = (e, data) => {
+    e.preventDefault();
+    axios.post("/api/contact", data, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  };
 
   console.log("Payload: ", payload);
   return (
@@ -18,7 +28,10 @@ export const ContactForm = () => {
             name="department"
             value="Mentor"
             onChange={(e) =>
-              setPayload({ department: e.target.value })
+              setPayload((prevState) => ({
+                ...prevState,
+                department: e.target.value,
+              }))
             }
           />
           <span>Mentor</span>
@@ -30,7 +43,10 @@ export const ContactForm = () => {
             name="department"
             value="Support"
             onChange={(e) =>
-              setPayload({ department: e.target.value })
+              setPayload((prevState) => ({
+                ...prevState,
+                department: e.target.value,
+              }))
             }
           />
           <span>Support</span>
@@ -128,7 +144,7 @@ export const ContactForm = () => {
         <button
           className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
           // type="submit"
-          onClick={() => alert("Payload: ", console.log(payload))}
+          onClick={(e) => sendPayload(e, payload)}
         >
           Submit
         </button>
