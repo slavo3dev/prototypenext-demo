@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react";
 
 export const ContactForm = () => {
   const [payload, setPayload] = useState();
+
+  console.log("Payload: ", payload);
   return (
     <>
       <div

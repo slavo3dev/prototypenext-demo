@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 import TextEffect from "../components/elements/TextEffect";
 import Link from "next/link";
+import { ContactForm } from "../components";
 
 const Contact = () => {
   return (
@@ -89,114 +90,7 @@ const Contact = () => {
                   hear from you!
                 </h2>
               </div>
-              <div>
-                <form>
-                  <div
-                    className="mb-4 text-sm wow animate__animatedanimated animate__fadeIn"
-                    data-wow-delay=".5s"
-                  >
-                    <span className="mr-4 font-semibold">
-                      Departament:
-                    </span>
-                    <label className="mr-4">
-                      <input
-                        className="mr-1"
-                        type="radio"
-                        name="department"
-                        value="1"
-                        checked=""
-                      />
-                      <span>Support</span>
-                    </label>
-                    <label>
-                      <input
-                        className="mr-1"
-                        type="radio"
-                        name="department"
-                        value="2"
-                      />
-                      <span>Sales</span>
-                    </label>
-                  </div>
-                  <div
-                    className="mb-4 wow animate__animatedanimated animate__fadeIn"
-                    data-wow-delay=".3s"
-                  >
-                    <input
-                      className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                      type="text"
-                      placeholder="Subject"
-                    />
-                  </div>
-                  <div
-                    className="mb-4 wow animate__animatedanimated animate__fadeIn"
-                    data-wow-delay=".3s"
-                  >
-                    <input
-                      className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                      type="text"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div
-                    className="mb-4 wow animate__animatedanimated animate__fadeIn"
-                    data-wow-delay=".3s"
-                  >
-                    <input
-                      className="w-full p-4 text-xs font-semibold leading-none bg-blueGray-50 rounded outline-none"
-                      type="email"
-                      placeholder="name@example.com"
-                    />
-                  </div>
-                  <div
-                    className="mb-4 wow animate__animatedanimated animate__fadeIn"
-                    data-wow-delay=".3s"
-                  >
-                    <textarea
-                      className="w-full h-24 p-4 text-xs font-semibold leading-none resize-none bg-blueGray-50 rounded outline-none"
-                      placeholder="Message..."
-                    ></textarea>
-                  </div>
-                  <div
-                    className="mb-4 wow animate__animatedanimated animate__fadeIn"
-                    data-wow-delay=".3s"
-                  >
-                    <label className="flex px-2 bg-blueGray-50 rounded">
-                      <input
-                        className="hidden"
-                        type="file"
-                        name="Choose file"
-                      />
-                      <span className="my-1 ml-auto px-4 py-3 text-xs text-white font-semibold leading-none bg-blueGray-500 hover:bg-blueGray-600 rounded cursor-pointer">
-                        {" "}
-                        Browse
-                      </span>
-                    </label>
-                  </div>
-                  <div
-                    className="flex justify-between items-center wow animate__animatedanimated animate__fadeIn"
-                    data-wow-delay=".3s"
-                  >
-                    <label>
-                      <input
-                        className="mr-1"
-                        type="checkbox"
-                        name="terms"
-                        value="1"
-                      />
-                      <span className="text-sm font-semibold">
-                        I agree to terms and conditions.
-                      </span>
-                    </label>
-                    <button
-                      className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded"
-                      type="submit"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </form>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </section>
