@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { storeData, notificationStatus } from "../../lib";
 import { Notification } from "../notification";
 
 export const ContactForm = () => {
   const [payload, setPayload] = useState();
   const [reqStatus, setReqStatus] = useState();
+  const [reqError, setReqError] = useState();
+
+  useEffect(() => {
+    if (reqStatus === "success" || reqStatus === "error") {
+      const timer = setTimeout(() => {
+        setReqStatus(null);
+        setReqError(null);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [reqStatus]);
 
   const sendPayload = async (e, data) => {
     e.preventDefault();
@@ -17,6 +29,7 @@ export const ContactForm = () => {
       setReqStatus("success");
     } else {
       setReqStatus("error");
+      setReqError(null);
     }
   };
 
@@ -152,7 +165,11 @@ export const ContactForm = () => {
         <button
           className="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
           // type="submit"
-          onClick={(e) => sendPayload(e, payload)}
+          onClick={(e) => {
+            payload.terms === "accept"
+              ? sendPayload(e, payload)
+              : alert("Please, Mark Accept Terms Box!!");
+          }}
         >
           Submit
         </button>
