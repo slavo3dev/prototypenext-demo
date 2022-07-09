@@ -32,8 +32,8 @@ const MobileMenu = ({ hiddenClass, handleRemove }) => {
               <a className="mr-auto text-3xl font-semibold leading-none">
                 <img
                   className="h-10"
-                  src="/assets/imgs/logos/monst-logo.svg"
-                  alt="Monst"
+                  src="/assets/imgs/logos/felp_app.svg"
+                  alt="felpApp"
                 />
               </a>
             </Link>

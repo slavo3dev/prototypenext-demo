@@ -28,7 +28,7 @@ const Header = ({ handleHidden }) => {
               <a className="text-3xl font-semibold leading-none">
                 <img
                   className="h-20"
-                  src="/assets/imgs/logos/felpapp_logo.svg"
+                  src="/assets/imgs/logos/felp_app.svg"
                   alt="felpApp"
                 />
               </a>
