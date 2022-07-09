@@ -1,15 +1,15 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
   },
   extends: ["plugin:react/recommended", "prettier"],
   parserOptions: {
+    ecmaVersion: 2020,
     ecmaFeatures: {
       js: true,
       jsx: true,
+      experimentalObjectRestSpread: true,
     },
-    ecmaVersion: 12,
     sourceType: "module",
   },
   plugins: ["react", "prettier"],

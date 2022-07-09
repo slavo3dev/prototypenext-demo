@@ -47,7 +47,7 @@ export const Subscribe = () => {
         />
       </div>
       <button
-        className="w-full md:w-auto py-4 px-8 text-xs text-white hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
+        className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
         type="submit"
         onClick={handleSubscribe}
       >
