@@ -7,7 +7,7 @@ const Preloader = () => {
         <div className="preloader flex-1 content-center">
           <div className="logo absolute inset-y-2/4 jump center">
             <img
-              src="/assets/imgs/logos/felpapp_logo.svg"
+              src={"/assets/imgs/logos/felpapp_logo.svg"}
               alt="felpApp Logo"
             />
             <h1 className="text-lg font-semibold">felpApp </h1>
