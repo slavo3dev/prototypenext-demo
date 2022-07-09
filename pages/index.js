@@ -4,11 +4,21 @@ import Slider2 from "../components/slider/Slider2";
 import TextEffect from "../components/elements/TextEffect";
 import Link from "next/link";
 import { Subscribe, SignIn, ContactForm } from "../components";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <>
       <Layout>
+        <Head>
+          <title>
+            Software Web/Mobile Development - Consulting - FelpAPP
+          </title>
+          <meta
+            name="Learning and Building Web and Mobile Application"
+            content="Become Software Developer / Conusling for Business and Startups"
+          />
+        </Head>
         <section className="relative -mt-24 pt-24">
           <div
             className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0"

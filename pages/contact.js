@@ -3,11 +3,18 @@ import Layout from "../components/layout/Layout";
 import TextEffect from "../components/elements/TextEffect";
 import Link from "next/link";
 import { ContactForm, Subscribe } from "../components";
-
+import Head from "next/head";
 const Contact = () => {
   return (
     <>
       <Layout>
+        <Head>
+          <title>Contat us - FelpAPP</title>
+          <meta
+            name="Learning and Building Web and Mobile Application"
+            content="Become Software Developer / Conusling for Business and Startups"
+          />
+        </Head>
         <section className="relative -mt-24 pt-24">
           <div
             className="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-100 z-0"

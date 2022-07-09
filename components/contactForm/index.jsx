@@ -12,6 +12,14 @@ export const ContactForm = () => {
       const timer = setTimeout(() => {
         setReqStatus(null);
         setReqError(null);
+        // setPayload({
+        //   department: "",
+        //   subject: "",
+        //   name: "",
+        //   email: "",
+        //   message: "",
+        //   terms: "",
+        // });
       }, 2000);
 
       return () => clearTimeout(timer);

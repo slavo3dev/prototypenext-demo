@@ -2,11 +2,20 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 import CounterUp from "../components/elements/Counterup";
 import { Subscribe, ContactForm } from "../components";
-
+import { Head } from "next/head";
 const Services = () => {
   return (
     <>
       <Layout>
+        <Head>
+          <title>
+            Software Web/Mobile Development - Consulting - FelpAPP
+          </title>
+          <meta
+            name="Learning and Building Web and Mobile Application"
+            content="Become Software Developer / Conusling for Business and Startups"
+          />
+        </Head>
         <section className="-mt-24 pt-40 pb-12 bg-blueGray-100">
           <div className="container">
             <h1 className="text-2xl lg:text-5xl font-bold mb-5 wow animate__animated animate__fadeIn animated">
