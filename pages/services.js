@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout/Layout";
 import CounterUp from "../components/elements/Counterup";
 import { Subscribe, ContactForm } from "../components";
-import { Head } from "next/head";
+import Head from "next/head";
 const Services = () => {
   return (
     <>
