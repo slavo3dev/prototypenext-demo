@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
               <a
                 className="inline-block px-2"
-                href="https://www.facebook.com/prototypenext"
+                href="https://www.facebook.com/felpapp"
               >
                 <img
                   src={"/assets/imgs/icons/facebook-blue.svg"}
@@ -81,7 +81,7 @@ const Footer = () => {
               </a>
               <a
                 className="inline-block px-2"
-                href="https://www.instagram.com/slavo_3/"
+                href="https://www.instagram.com/prototypenext/"
               >
                 <img
                   src={"/assets/imgs/icons/instagram-blue.svg"}
