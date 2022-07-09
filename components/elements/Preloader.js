@@ -8,7 +8,7 @@ const Preloader = () => {
           <div className="logo absolute inset-y-2/4 jump center">
             <img
               src="/assets/imgs/logos/felpapp_logo.svg"
-              alt="Slavo3 && Prototype.NEXT"
+              alt="felpApp Logo"
             />
             <h1 className="text-lg font-semibold">felpApp </h1>
           </div>
