@@ -75,7 +75,7 @@ const Home = () => {
                   <img
                     className="lg:max-w-lg"
                     src="/assets/imgs/illustrations/eating.svg"
-                    alt="Monst"
+                    alt="felpApp - Consulting "
                   />
                 </div>
               </div>

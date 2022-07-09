@@ -15,7 +15,7 @@ const Footer = () => {
                 <a className="inline-block mx-auto lg:mx-0 text-3xl font-semibold leading-none">
                   <img
                     className="h-20"
-                    src="/assets/imgs/logos/felpapp_logo.svg"
+                    src={"/assets/imgs/logos/felpapp_logo.svg"}
                     alt="felpApp Logo"
                   />
                 </a>
@@ -66,8 +66,8 @@ const Footer = () => {
                 href="https://www.facebook.com/prototypenext"
               >
                 <img
-                  src="/assets/imgs/icons/facebook-blue.svg"
-                  alt="Slavo3 && Prototype.NEXT"
+                  src={"/assets/imgs/icons/facebook-blue.svg"}
+                  alt="felpApp - Consulting "
                 />
               </a>
               <a
@@ -75,8 +75,8 @@ const Footer = () => {
                 href="https://twitter.com/slavo3dev"
               >
                 <img
-                  src="/assets/imgs/icons/twitter-blue.svg"
-                  alt="Slavo3 && Prototype.NEXT"
+                  src={"/assets/imgs/icons/twitter-blue.svg"}
+                  alt="felpApp - Consulting "
                 />
               </a>
               <a
@@ -84,8 +84,8 @@ const Footer = () => {
                 href="https://www.instagram.com/slavo_3/"
               >
                 <img
-                  src="/assets/imgs/icons/instagram-blue.svg"
-                  alt="Slavo3 && Prototype.NEXT"
+                  src={"/assets/imgs/icons/instagram-blue.svg"}
+                  alt="felpApp - Consulting "
                 />
               </a>
               <a
@@ -93,8 +93,8 @@ const Footer = () => {
                 href="https://www.instagram.com/felpapp/"
               >
                 <img
-                  src="/assets/imgs/icons/instagram-blue.svg"
-                  alt="Slavo3 && Prototype.NEXT"
+                  src={"/assets/imgs/icons/instagram-blue.svg"}
+                  alt="felpApp - Consulting "
                 />
               </a>
             </div>
