@@ -57,7 +57,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                prototypenext.com
+                Prototype.NEXT
               </a>
             </p>
             <div className="order-first lg:order-last -mx-2 mb-4 lg:mb-0">
