@@ -433,7 +433,7 @@ const Pricing = () => {
                       Start Free Trial
                     </a>
                     <a
-                      className="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border border-blue-400 hover:border-blue-400 rounded"
+                      className="block sm:inline-block py-4 px-6 text-xs font-semibold leading-none border border-blue-400 hover:border-blue-400 rounded"
                       href="#"
                     >
                       Purchase
@@ -1171,7 +1171,7 @@ const Pricing = () => {
                   />
                 </div>
                 <button
-                  className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
+                  className="w-full md:w-auto py-4 px-8 text-xs text-white  hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
                   type="submit"
                 >
                   Sign Up

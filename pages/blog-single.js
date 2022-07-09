@@ -305,7 +305,7 @@ const BlogSingle = () => {
                         required
                       ></textarea>
                     </div>
-                    <div className="w-full md:w-full flex items-start md:w-full px-1">
+                    <div className="w-full flex items-start md:w-full px-1">
                       <div className="flex items-start w-1/2 text-gray-700 px-2 mr-auto">
                         <svg
                           fill="none"
@@ -375,7 +375,7 @@ const BlogSingle = () => {
                   />
                 </div>
                 <button
-                  className="w-full md:w-auto py-4 px-8 text-xs text-white text-blue-800 hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
+                  className="w-full md:w-auto py-4 px-8 text-xs text-white hover:text-white font-semibold leading-none border border-blue-300 hover:border-blue-300 bg-white hover:bg-blue-500 rounded transition duration-300 ease-in-out"
                   type="submit"
                 >
                   Sign Up
