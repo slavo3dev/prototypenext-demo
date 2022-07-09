@@ -19,7 +19,6 @@ export const SignIn = () => {
       setEmail("");
     } catch (e) {
       setErrorMsg(e.response.data);
-      console.log(e.response);
       setState("Error");
       setTimeout(() => {
         setState("idle");

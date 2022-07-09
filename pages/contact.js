@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Layout from "../components/layout/Layout";
 import TextEffect from "../components/elements/TextEffect";
 import Link from "next/link";

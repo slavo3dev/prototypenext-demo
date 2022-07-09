@@ -3,7 +3,7 @@ import { MongoClient } from "mongodb";
 export default async (req, res) => {
   const { subject, department, name, email, message } = req.body;
 
-  const uri = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_contact_cluster}.wbdvr.mongodb.net/?retryWrites=true&w=majority`;
+  const uri = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_contact_cluster}.wbdvr.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
 
   if (req.method === "POST") {
     if (

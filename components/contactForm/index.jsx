@@ -1,19 +1,27 @@
-import React, { useState, useCallback } from "react";
-import axios from "axios";
+import React, { useState } from "react";
+import { storeData, notificationStatus } from "../../lib";
+import { Notification } from "../notification";
 
 export const ContactForm = () => {
   const [payload, setPayload] = useState();
+  const [reqStatus, setReqStatus] = useState();
 
-  const sendPayload = (e, data) => {
+  const sendPayload = async (e, data) => {
     e.preventDefault();
-    axios.post("/api/contact", data, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+
+    setReqStatus("pending");
+
+    const res = await storeData(data);
+
+    if (res.data.message === "Succesfuly Stored") {
+      setReqStatus("success");
+    } else {
+      setReqStatus("error");
+    }
   };
 
-  console.log("Payload: ", payload);
+  let notification = notificationStatus(reqStatus);
+
   return (
     <>
       <div
@@ -149,6 +157,13 @@ export const ContactForm = () => {
           Submit
         </button>
       </div>
+      {notification && (
+        <Notification
+          status={notification.status}
+          title={notification.title}
+          message={notification.message}
+        />
+      )}
     </>
   );
 };
