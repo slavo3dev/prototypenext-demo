@@ -182,13 +182,20 @@ export const ContactForm = () => {
           Submit
         </button>
       </div>
-      {notification && (
-        <Notification
-          status={notification.status}
-          title={notification.title}
-          message={notification.message}
-        />
+      {notification && ( console.log("test")
+        // <Notification
+        //   status={notification.status}
+        //   title={notification.title}
+        //   message={notification.message}
+        // />
       )}
+        {true && (
+        <Notification
+          status={'success'}
+          title={"Error Message"}
+          message={" We are sorry, but something went worng, please try to send message again!"}
+        />
+      )} 
     </>
   );
 };
