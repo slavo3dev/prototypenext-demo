@@ -19,20 +19,34 @@
 
 
 .notification {
-  
+  opacity: 0.98;
   align-items: center;
   padding: 20px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   left: 40%;
-  top: 40%;
+  top: 50%;
+  bottom: 20%; 
   font-family:'Times New Roman', Times, serif;
   font-size: 20px;
   text-align: center;
-  z-index: 10;
-
+  z-index: 3;
 }
+
+
+/* top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%); */
+
+
+
+
+
+
 .Icon{
   font-size: small;
   position: relative;
@@ -80,7 +94,7 @@
 }
 
 .success {
-  position: absolute;
+  position: fixed;
   width: 300px;
   height: 300px;
   background: linear-gradient(green, yellow,green);
@@ -91,7 +105,7 @@
 
 .error {
   background: linear-gradient( red,pink,red);
-  position: absolute;
+  position: fixed;
   width: 300px;
   height: 300px;
   border-radius: 40px;
@@ -99,8 +113,8 @@
 }
 
 .pending{
-  background: linear-gradient(orange,pink,orange);
-  position: absolute;
+  background: linear-gradient(blue,skyblue,blue);
+  position: fixed;
   width: 300px;
   height: 300px;
   border-radius: 40px;
@@ -111,11 +125,25 @@
 }
 
 
-/* @media (max-width: 768px) {
+@media (max-width: 612px) {
   .notification {
-    width: 40rem;
-    left: calc(50% - 20rem);
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
+    width: 12rem;
+    left: 21%;
+    
   }
-} */
+  .notification h2 {
+    font-size: 15px;
+  }
+  
+  .notification p {
+   
+    font-size: 15px;
+    
+  }
+} 
+@media (min-width: 1024px){
+
+  .notification{
+    top:auto;
+  }
+}
