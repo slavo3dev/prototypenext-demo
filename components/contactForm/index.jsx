@@ -34,10 +34,6 @@ export const ContactForm = () => {
   };
 
   let notification = notificationStatus(reqStatus);
-  console.log("Req Statsusl ", reqStatus)
-  console.log("Notification: ", notification)
-
-
   return (
     <>
       <div
@@ -177,12 +173,12 @@ export const ContactForm = () => {
           Submit
         </button>
       </div>
-      {notification && ( 
-         <Notification
-           status={notification.status}
-           title={notification.title}
-           message={notification.message}
-         />
+      {notification && (
+        <Notification
+          status={notification.status}
+          title={notification.title}
+          message={notification.message}
+        />
       )}
     </>
   );
