@@ -12,11 +12,12 @@ const Home = () => {
       <Layout>
         <Head>
           <title>
-            Software Web/Mobile Development - Consulting - FelpAPP
+            Consulting - Software Web/Mobile Development - Web3.0
+            Prototype.NEXT
           </title>
           <meta
-            name="Learning and Building Web and Mobile Application"
-            content="Become Software Developer / Conusling for Business and Startups"
+            name="Software Web Development | Software Optimization"
+            content="Blockchain | NFT | Crypto "
           />
         </Head>
         <section className="relative -mt-24 pt-24">
